@@ -79,22 +79,22 @@ const Navbar = () => {
         <div className="md:hidden bg-primary">
           <ul className="flex flex-col items-center space-y-4 py-4">
             <li>
-              <a href="#features" className="hover:text-gray-400">
+              <a href="#features" className="hover:text-gray-400" onClick={toggleMenu}>
                 Features
               </a>
             </li>
             <li>
-              <a href="#docs" className="hover:text-gray-400">
+              <a href="#docs" className="hover:text-gray-400" onClick={toggleMenu}>
                 Documentation
               </a>
             </li>
             <li>
-              <a href="#downloads" className="hover:text-gray-400">
+              <a href="#downloads" className="hover:text-gray-400" onClick={toggleMenu}>
                 Downloads
               </a>
             </li>
             <li>
-              <a href="#contact" className="hover:text-gray-400">
+              <a href="#contact" className="hover:text-gray-400" onClick={toggleMenu}>
                 Contact
               </a>
             </li>
