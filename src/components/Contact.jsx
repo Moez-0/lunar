@@ -105,7 +105,7 @@ const ContactPage = () => {
             You can also reach us by email or through our customer support system for more urgent inquiries.
           </p>
           <p className="text-lg text-gray-700">
-            <strong>Email:</strong> support@luna.ameny.online
+            <strong>Email:</strong> support@ameny.online
           </p>
           <p className="text-lg text-gray-700 mt-2">
             <strong>Phone:</strong> +216 123 456 78
