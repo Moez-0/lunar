@@ -21,8 +21,8 @@ const Login = () => {
   
       setTimeout(() => {
         console.log("Redirecting to /timer...");
-        //window.location.href = "/timer";
-        navigate("/timer");
+        window.location.href = "/timer";
+        //navigate("/timer");
 
       }, 500); 
   
