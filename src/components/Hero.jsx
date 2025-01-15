@@ -22,7 +22,7 @@ const Hero = () => {
             Learn More
           </a>
           <a
-            href="#get-started"
+            href="/signup"
             className="bg-white text-primary hover:text-secondary px-6 py-3 rounded-md text-lg shadow-lg transition duration-300 hover:bg-light"
           >
             Get Started

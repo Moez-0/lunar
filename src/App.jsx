@@ -1,29 +1,40 @@
-import { useState } from 'react'
-
-import './App.css'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Features from './components/Features'
-import DocumentationPage from './components/Docs'
-import DownloadsPage from './components/Downloands'
-
-
-import Footer from './components/Header'
-import ContactPage from './components/Contact'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout";
+import Home from "./pages/Home";
+import NoPage from "./pages/NoPage";
+import Login from "./pages/Login";
+import Signup from "./pages/SignUp";
+import TimerPage from "./pages/TimerPage";
+import PomodoroTimer from "./pages/Pomodoro";
+import ReportPage from "./pages/Reports";
+import TodoPage from "./pages/ToDo";
+import TasksPage from "./pages/Tasks";
+import SettingsPage from "./pages/Settings";
+import { AuthProvider } from "./context/AuthContext";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
-
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Features />
-      <DocumentationPage />
-      <DownloadsPage />
-      <ContactPage />
-      <Footer />
-    </>
-  )
+    <AuthProvider> 
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="*" element={<NoPage />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/timer" element={<ProtectedRoute><TimerPage /></ProtectedRoute>} />
+            <Route path="/pomodoro" element={<ProtectedRoute><PomodoroTimer /></ProtectedRoute>} />
+            <Route path="/reports" element={<ProtectedRoute><ReportPage /></ProtectedRoute>} />
+            <Route path="/todo" element={<ProtectedRoute><TodoPage /></ProtectedRoute>} />
+            <Route path="/tasks" element={<ProtectedRoute><TasksPage /></ProtectedRoute>} />
+            <Route path="/settings" element={<ProtectedRoute><SettingsPage /></ProtectedRoute>} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
+  );
 }
 
-export default App
+export default App;
