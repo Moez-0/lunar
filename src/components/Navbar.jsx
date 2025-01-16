@@ -109,6 +109,8 @@ const Navbar = () => {
               <>
                 <li><Link to="/timer" className="hover:text-gray-400" onClick={toggleMenu}>Timer</Link></li>
                 <li><Link to="/reports" className="hover:text-gray-400" onClick={toggleMenu}>Reports</Link></li>
+                <li><Link to="/tasks" className="hover:text-gray-400" onClick={toggleMenu}>Tasks</Link></li>
+                <li><Link to="/todo" className="hover:text-gray-400" onClick={toggleMenu}>ToDo List</Link></li>
                 <li><Link to="/settings" className="hover:text-gray-400" onClick={toggleMenu}>Settings</Link></li>
                 <li>
                   <button onClick={() => { handleLogout(); toggleMenu(); }} className="bg-secondary text-white px-4 py-2 rounded-md text-sm hover:bg-secondary-light transition duration-300">Logout</button>
@@ -118,6 +120,8 @@ const Navbar = () => {
               <>
                 <li><a href="#features" className="hover:text-gray-400" onClick={toggleMenu}>Features</a></li>
                 <li><a href="#docs" className="hover:text-gray-400" onClick={toggleMenu}>Docs</a></li>
+                <li><a href="#downloads" className="hover:text-gray-400" onClick={toggleMenu}>Downloads</a></li>
+                <li><a href="#contact" className="hover:text-gray-400" onClick={toggleMenu}>Contact</a></li>
                 <li><Link to="/signup" className="hover:text-gray-400" onClick={toggleMenu}>Get Started</Link></li>
                 <li><Link to="/login" className="hover:text-gray-400" onClick={toggleMenu}>Login</Link></li>
               </>
