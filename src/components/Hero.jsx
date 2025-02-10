@@ -19,7 +19,7 @@ const Hero = () => {
             href="#features"
             className="bg-secondary hover:bg-secondary-light text-white px-6 py-3 rounded-md text-lg shadow-lg transition duration-300 hover:shadow-xl hover:bg-accent"
           >
-            Learn More
+            Zebi
           </a>
           <a
             href="/signup"
