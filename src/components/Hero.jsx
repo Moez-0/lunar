@@ -10,7 +10,7 @@ const Hero = () => {
 
        
         <p className="text-lg md:text-xl text-gray-300 mb-8">
-          Luna is your interactive study assistant, designed to help you stay focused, track progress, and achieve your goals effortlessly.
+          Luna : Learning Utility For Next-Gen Acheivers
         </p>
 
         <div className="flex justify-center space-x-4 mb-8">
