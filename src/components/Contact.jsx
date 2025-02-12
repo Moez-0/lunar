@@ -108,7 +108,7 @@ const ContactPage = () => {
             <strong>Email:</strong> support@ameny.online
           </p>
           <p className="text-lg text-gray-700 mt-2">
-            <strong>Phone:</strong> +216 123 456 78
+            <strong>Phone:</strong> +216 28 613 001
           </p>
         </div>
       </div>
