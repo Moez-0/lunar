@@ -54,7 +54,7 @@ const DocumentationPage = () => {
         <ul className="list-disc pl-6 space-y-2 text-gray-400">
           <li>Connect the ESP32 to your computer using a USB cable.</li>
           <li>Ensure the device is powered on with the LED indicator active.</li>
-          <li>Attach sensors like motion detectors or temperature sensors, if applicable.</li>
+          <li>Attach sensors like ultrasonic or infrared distance sensors to enable posture tracking.</li>
         </ul>
       </section>
 
@@ -71,6 +71,7 @@ const DocumentationPage = () => {
             Add the ESP32 board to your IDE under Preferences &gt; Additional
             Board URLs.
           </li>
+          <li>Ensure necessary libraries for the sensors(e.g.,VL53L0X for distance tracking) are installed in the Arduino IDE. </li>
           <li>Upload the Luna firmware to the ESP32 device.</li>
         </ul>
       </section>
@@ -92,6 +93,7 @@ const DocumentationPage = () => {
             Use the accompanying mobile app to verify the connection status.
           </li>
           <li>Check for signal strength and ensure a stable network.</li>
+          <li>Verify connectivity using the Luna website or mobile app to check sensor data and adjust study settings </li>
         </ul>
       </section>
 
