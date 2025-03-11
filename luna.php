@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 // Database credentials
 $host = "localhost"; // Replace with your host
 $username = "root"; // Replace with your database username
