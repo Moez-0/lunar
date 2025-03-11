@@ -25,6 +25,19 @@ const SettingsPage = () => {
           />
         </div>
 
+        <div className="flex justify-center mb-6">
+          <div className="bg-gray-200 p-4 rounded-md w-full text-center">
+            <h2 className="text-lg font-semibold">Music Settings</h2>
+            {/* Additional music settings can be added here */}
+          </div>
+        </div>
+        <div className="flex justify-center mb-6">
+          <div className="bg-gray-200 p-4 rounded-md w-full text-center">
+            <h2 className="text-lg font-semibold">Lighting Settings</h2>
+            {/* Additional lighting settings can be added here */}
+          </div>
+        </div>
+
         <div className="flex justify-center">
           <button
             onClick={() => alert("Settings Saved!")}
